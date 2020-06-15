@@ -2,7 +2,7 @@ FROM mono:6.8
 
 WORKDIR /tshock
 
-COPY scripts/create-backup.sh scripts/restore-backup.sh /tshock/
+#COPY scripts/create-backup.sh scripts/restore-backup.sh /tshock/
 
 RUN \
 	apt-get update && \
