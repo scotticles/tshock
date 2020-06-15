@@ -17,4 +17,4 @@ RUN \
   RUN echo "mono TerrariaServer.exe -configpath /tshock/config -worldselectpath /tshock/world -logpath /tshock/log -world $WORLDFILE" > /tshock/start.sh
   RUN chmod +x /tshock/start.sh
 
-ENTRYPOINT ["./tshock/start.sh"]
+ENTRYPOINT ["bash", "/tshock/start.sh"]
